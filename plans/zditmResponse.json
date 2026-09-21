@@ -1,0 +1,456 @@
+//{
+//  "id": 220,
+//  "number": "16311",
+//  "name": "Lubeckiego",
+//  "latitude": 53.447983,
+//  "longitude": 14.57485,
+//  "request_stop": false,
+//  "park_and_ride": false,
+//  "technical": false,
+//  "railway_station_name": null,
+//  "updated_at": "2026-07-10T20:13:40.000000Z"
+//}
+// przystanek w stronę miasta
+
+{
+  "data": {
+    "stop": {
+      "name": "Lubeckiego",
+      "number": "16311"
+    },
+    "departures": [
+      {
+        "line": {
+          "id": 10,
+          "number": "11",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "011-05",
+          "gtfs_id": "521802_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T19:04:00.000000Z",
+          "estimated": "2026-09-21T19:04:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 482,
+          "number": "117",
+          "model": "Tatra KT4Dt",
+          "low_floor": false,
+          "ticket_machine": {
+            "cards": true,
+            "coins": false
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 6,
+          "number": "6",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "006-02",
+          "gtfs_id": "522384_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T19:08:00.000000Z",
+          "estimated": "2026-09-21T19:08:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 339,
+          "number": "247+248",
+          "model": "Tatra T6A2D",
+          "low_floor": false,
+          "ticket_machine": {
+            "cards": true,
+            "coins": true
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 10,
+          "number": "11",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "011-06",
+          "gtfs_id": "521916_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "LOW_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T19:24:00.000000Z",
+          "estimated": "2026-09-21T19:24:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 1720,
+          "number": "625",
+          "model": "Moderus Beta <->",
+          "low_floor": true,
+          "ticket_machine": {
+            "cards": true,
+            "coins": false
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 6,
+          "number": "6",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "006-05",
+          "gtfs_id": "522182_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T19:28:00.000000Z",
+          "estimated": "2026-09-21T19:28:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 253,
+          "number": "121",
+          "model": "Tatra KT4Dt",
+          "low_floor": false,
+          "ticket_machine": {
+            "cards": true,
+            "coins": true
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 10,
+          "number": "11",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "011-07",
+          "gtfs_id": "521890_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T19:44:00.000000Z",
+          "estimated": "2026-09-21T19:44:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 311,
+          "number": "535+536",
+          "model": "Konstal 105Ng\/2015",
+          "low_floor": false,
+          "ticket_machine": {
+            "cards": true,
+            "coins": true
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 6,
+          "number": "6",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "006-06",
+          "gtfs_id": "522208_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "LOW_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T19:48:00.000000Z",
+          "estimated": "2026-09-21T19:48:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 1256,
+          "number": "604",
+          "model": "Moderus Beta",
+          "low_floor": true,
+          "ticket_machine": {
+            "cards": true,
+            "coins": true
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 10,
+          "number": "11",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "011-01",
+          "gtfs_id": "521827_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T20:05:00.000000Z",
+          "estimated": "2026-09-21T20:05:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 282,
+          "number": "235+238",
+          "model": "Tatra T6A2D",
+          "low_floor": false,
+          "ticket_machine": {
+            "cards": true,
+            "coins": false
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 6,
+          "number": "6",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "006-01",
+          "gtfs_id": "522361_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T20:08:00.000000Z",
+          "estimated": "2026-09-21T20:08:00.000000Z",
+          "departing_now": false,
+          "real_time": false,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": null
+      },
+      {
+        "line": {
+          "id": 10,
+          "number": "11",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "011-03",
+          "gtfs_id": "521866_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T20:25:00.000000Z",
+          "estimated": "2026-09-21T20:25:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 338,
+          "number": "245",
+          "model": "Tatra T6A2D",
+          "low_floor": false,
+          "ticket_machine": {
+            "cards": true,
+            "coins": true
+          },
+          "stuck": false
+        }
+      },
+      {
+        "line": {
+          "id": 6,
+          "number": "6",
+          "type": "DAY",
+          "subtype": "NORMAL",
+          "vehicle_type": "TRAM",
+          "on_demand": false,
+          "disruption": false,
+          "disruption_url": null
+        },
+        "trip": {
+          "service": "006-02",
+          "gtfs_id": "522384_POWS",
+          "start_date": "2026-09-21",
+          "headsign": {
+            "short": "Pomorzany",
+            "long": "Pomorzany"
+          },
+          "direction_id": 0,
+          "route_variant_number": 11,
+          "accessibility": "HIGH_FLOOR",
+          "note": null
+        },
+        "departure_time": {
+          "scheduled": "2026-09-21T20:28:00.000000Z",
+          "estimated": "2026-09-21T20:28:00.000000Z",
+          "departing_now": false,
+          "real_time": true,
+          "canceled": false
+        },
+        "request_stop": false,
+        "vehicle": {
+          "id": 339,
+          "number": "247+248",
+          "model": "Tatra T6A2D",
+          "low_floor": false,
+          "ticket_machine": {
+            "cards": true,
+            "coins": true
+          },
+          "stuck": false
+        }
+      }
+    ],
+    "messages": [],
+    "updated_at": "2026-09-21T18:50:40.536236Z"
+  }
+}
