@@ -1,24 +1,33 @@
-import {fetchWeather} from './api/weather.js';
+import {fetchForecast, fetchWeather} from './api/weather.js';
 import {fetchAirQuality} from './api/airQuality.js';
 import {fetchSunriseSunset} from './api/sun.js';
-import {getRefreshToken} from './server/auth.js';
-import {getCalendarEvents} from './api/calendar.js';
+import {fetchCalendarEvents} from './api/calendar.js';
 import {fetchDepartures} from './api/transport.js';
+import type {DashboardData} from './types/dashboard.js';
+import {generateDashboardImage} from './renderer/canvas.js';
 
-// const weatherData = await fetchWeather();
-// console.log(weatherData);
+const [weather, forecast, airQuality, sun, departures, calendar] = await Promise.all([
+    fetchWeather(),
+    fetchForecast(),
+    fetchAirQuality(),
+    fetchSunriseSunset(),
+    fetchDepartures(),
+    fetchCalendarEvents()
+]);
+
+// const dashboardData: DashboardData = {
+//     weather,
+//     forecast,
+//     airQuality,
+//     sun,
+//     departures,
+//     calendar,
+//     updatedAt: new Date().toLocaleString('pl-PL', {
+//         dateStyle: 'short',
+//         timeStyle: 'medium',
+//         timeZone: 'Europe/Warsaw'
+//     }),
+// }
 //
-// const airQualityData = await fetchAirQuality();
-// console.log(airQualityData);
-//
-// const sunData = await fetchSunriseSunset();
-// console.log(sunData)
-
-// const calendarData = await getCalendarEvents();
-// console.log(calendarData);
-
-// const calendarData = await getCalendarList();
-// console.log(JSON.stringify(calendarData.data.items, null, 2));
-
-const departuresData = await fetchDepartures();
-console.log(departuresData);
+// console.log(dashboardData);
+await generateDashboardImage();

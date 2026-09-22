@@ -1,0 +1,92 @@
+[
+  {
+    "line": "6",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T17:55:00.000000Z",
+    "estimatedDeparture": "2026-09-22T17:55:08.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Tatra KT4Dt"
+  },
+  {
+    "line": "11",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T18:05:00.000000Z",
+    "estimatedDeparture": "2026-09-22T18:05:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Konstal 105N2k/2000"
+  },
+  {
+    "line": "6",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T18:10:00.000000Z",
+    "estimatedDeparture": "2026-09-22T18:10:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Moderus Beta"
+  },
+  {
+    "line": "11",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T18:24:00.000000Z",
+    "estimatedDeparture": "2026-09-22T18:24:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Tatra T6A2D"
+  },
+  {
+    "line": "6",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T18:28:00.000000Z",
+    "estimatedDeparture": "2026-09-22T18:28:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Konstal 105N2k/2000"
+  },
+  {
+    "line": "11",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T18:44:00.000000Z",
+    "estimatedDeparture": "2026-09-22T18:44:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Tatra T6A2D"
+  },
+  {
+    "line": "6",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T18:48:00.000000Z",
+    "estimatedDeparture": "2026-09-22T18:48:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Tatra T6A2D"
+  },
+  {
+    "line": "11",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T19:04:00.000000Z",
+    "estimatedDeparture": "2026-09-22T19:04:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Moderus Alfa"
+  },
+  {
+    "line": "6",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T19:08:00.000000Z",
+    "estimatedDeparture": "2026-09-22T19:08:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Moderus Alfa"
+  },
+  {
+    "line": "11",
+    "destination": "Pomorzany",
+    "scheduledDeparture": "2026-09-22T19:24:00.000000Z",
+    "estimatedDeparture": "2026-09-22T19:24:00.000000Z",
+    "realTime": true,
+    "canceled": false,
+    "tramModel": "Moderus Beta <->"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "sunrise": "2026-09-22T04:20:22+00:00",
+  "sunset": "2026-09-22T16:36:59+00:00",
+  "solar_noon": "2026-09-22T10:28:40+00:00",
+  "day_length": 44197,
+  "civil_twilight_begin": "2026-09-22T03:48:13+00:00",
+  "civil_twilight_end": "2026-09-22T17:09:08+00:00",
+  "nautical_twilight_begin": "2026-09-22T03:08:06+00:00",
+  "nautical_twilight_end": "2026-09-22T17:49:15+00:00",
+  "astronomical_twilight_begin": "2026-09-22T02:26:10+00:00",
+  "astronomical_twilight_end": "2026-09-22T18:31:11+00:00"
+}
