@@ -1,6 +1,6 @@
 export const CONFIG = {
     canvas: {
-        width: 800,
-        height: 600,
+        width: 600,
+        height: 800,
     },
 };
