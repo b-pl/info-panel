@@ -5,8 +5,12 @@ import { CONFIG } from '../../config/index.js';
 import { setupFonts } from './utils/fonts.js';
 import { renderHeader } from './components/header.js';
 import { renderFooter } from './components/footer.js';
+import { renderWeatherWidget } from './components/weatherWidget.js';
+import type { HourlyForecastItem, WeatherData } from '../types/api.js';
+import type {DashboardData} from '../types/dashboard.js';
+import {getCurrentTime} from './utils/time.js';
 
-export async function generateDashboardImage(): Promise<string> {
+export async function generateDashboardImage(dashboardData: DashboardData): Promise<string> {
     // 0. Inicjalizacja czcionek wektorowych z pełną obsługą polskich znaków (Inter)
     setupFonts();
 
@@ -20,15 +24,20 @@ export async function generateDashboardImage(): Promise<string> {
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, width, height);
 
-    // 3. Renderowanie nagłówka (godzina i data) oraz stopki (odświeżono)
-    renderHeader(ctx, '20:40');
-    renderFooter(ctx, '20:40');
+    // 3. Fejkowe dane pogodowe do weryfikacji wyglądu
+    const weatherData: WeatherData | null = dashboardData.weather;
+    const forecastData: HourlyForecastItem[] | null = dashboardData.forecast;
 
-    // 4. Upewnienie się, że katalog output/ istnieje
+    // 4. Renderowanie nagłówka, widgetu pogody oraz stopki
+    renderHeader(ctx, getCurrentTime());
+    await renderWeatherWidget(ctx, weatherData, forecastData);
+    renderFooter(ctx, getCurrentTime());
+
+    // 5. Upewnienie się, że katalog output/ istnieje
     const outputDir = path.resolve(process.cwd(), 'output');
     await fs.mkdir(outputDir, { recursive: true });
 
-    // 5. Zapis pliku PNG
+    // 6. Zapis pliku PNG
     const buffer = await canvas.encode('png');
     const outputPath = path.join(outputDir, 'dashboard.png');
     await fs.writeFile(outputPath, buffer);

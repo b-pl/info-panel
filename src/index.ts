@@ -15,19 +15,19 @@ const [weather, forecast, airQuality, sun, departures, calendar] = await Promise
     fetchCalendarEvents()
 ]);
 
-// const dashboardData: DashboardData = {
-//     weather,
-//     forecast,
-//     airQuality,
-//     sun,
-//     departures,
-//     calendar,
-//     updatedAt: new Date().toLocaleString('pl-PL', {
-//         dateStyle: 'short',
-//         timeStyle: 'medium',
-//         timeZone: 'Europe/Warsaw'
-//     }),
-// }
-//
+const dashboardData: DashboardData = {
+    weather,
+    forecast,
+    airQuality,
+    sun,
+    departures,
+    calendar,
+    updatedAt: new Date().toLocaleString('pl-PL', {
+        dateStyle: 'short',
+        timeStyle: 'medium',
+        timeZone: 'Europe/Warsaw'
+    }),
+}
+
 // console.log(dashboardData);
-await generateDashboardImage();
+await generateDashboardImage(dashboardData);

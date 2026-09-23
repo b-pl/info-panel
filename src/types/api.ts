@@ -12,6 +12,7 @@ export interface HourlyForecastItem {
     temp: number;
     rain: number;
     rainProbability: number;
+    weather_code: number;
 }
 
 export interface AirQualityData {
