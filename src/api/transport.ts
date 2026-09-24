@@ -1,4 +1,5 @@
 import type {TramDepartureData} from '../types/api.js';
+import {localizeTime} from '../renderer/utils/time.js';
 
 const BASE_URL = 'https://www.zditm.szczecin.pl/api/v2/departure-boards';
 const STOP_ID = '16311';
@@ -52,8 +53,8 @@ export const fetchDepartures = async (stopId: string = STOP_ID): Promise<TramDep
         return departures.map((item) => ({
             line: item.line.number,
             destination: item.trip.headsign.short,
-            scheduledDeparture: item.departure_time.scheduled,
-            estimatedDeparture: item.departure_time.estimated ?? null,
+            scheduledDeparture: localizeTime(item.departure_time.scheduled),
+            estimatedDeparture: localizeTime(item.departure_time.estimated) ?? null,
             realTime: item.departure_time.real_time,
             canceled: item.departure_time.canceled,
             tramModel: item.vehicle?.model ?? null

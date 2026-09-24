@@ -29,7 +29,7 @@ export interface SunriseData {
 export interface TramDepartureData {
     line: string;
     destination: string;
-    scheduledDeparture: string;
+    scheduledDeparture: string | null;
     estimatedDeparture: string | null;
     realTime: boolean;
     canceled: boolean;

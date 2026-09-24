@@ -6,6 +6,8 @@ import { setupFonts } from './utils/fonts.js';
 import { renderHeader } from './components/header.js';
 import { renderFooter } from './components/footer.js';
 import { renderWeatherWidget } from './components/weatherWidget.js';
+import { renderTransportWidget } from './components/transportWidget.js';
+import { renderCalendarWidget } from './components/calendarWidget.js';
 import type { HourlyForecastItem, WeatherData } from '../types/api.js';
 import type {DashboardData} from '../types/dashboard.js';
 import {getCurrentTime} from './utils/time.js';
@@ -24,13 +26,17 @@ export async function generateDashboardImage(dashboardData: DashboardData): Prom
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, width, height);
 
-    // 3. Fejkowe dane pogodowe do weryfikacji wyglądu
+    // 3. Dane z API
     const weatherData: WeatherData | null = dashboardData.weather;
     const forecastData: HourlyForecastItem[] | null = dashboardData.forecast;
+    const departureData = dashboardData.departures;
+    const calendarEvents = dashboardData.calendar;
 
-    // 4. Renderowanie nagłówka, widgetu pogody oraz stopki
+    // 4. Renderowanie poszczególnych komponentów
     renderHeader(ctx, getCurrentTime());
     await renderWeatherWidget(ctx, weatherData, forecastData);
+    await renderTransportWidget(ctx, departureData);
+    await renderCalendarWidget(ctx, calendarEvents);
     renderFooter(ctx, getCurrentTime());
 
     // 5. Upewnienie się, że katalog output/ istnieje
