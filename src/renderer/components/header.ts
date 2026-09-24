@@ -1,7 +1,7 @@
 import type { SKRSContext2D } from '@napi-rs/canvas';
 import { LAYOUT } from '../../../config/layout.js';
 
-export function renderHeader(ctx: SKRSContext2D, currentTime: string = '20:40'): void {
+export function renderHeader(ctx: SKRSContext2D): void {
     const { x, y, width, height } = LAYOUT.header;
 
     ctx.save();
@@ -10,16 +10,14 @@ export function renderHeader(ctx: SKRSContext2D, currentTime: string = '20:40'):
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(x, y, width, height);
 
-    // Duży czas (po lewej stronie)
-    ctx.fillStyle = '#000000';
-    ctx.font = 'bold 36px "Inter-Bold"';
-    ctx.textAlign = 'left';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(currentTime, x + 20, y + height / 2);
+    // Zwalniamy miejsce po lewej stronie (x: 20, y: 0..height) na lokalny zegar HTML.
+    // Tło nagłówka jest czysto białe (#ffffff), więc obszar pod zegarem pozostaje pusty.
 
     // Pełna data z polskimi znakami (po prawej stronie)
+    ctx.fillStyle = '#000000';
     ctx.font = '18px "Inter"';
     ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
     ctx.fillText('Wtorek, 22 września 2026', x + width - 20, y + height / 2);
 
     // Dolna linia rozdzielająca nagłówek

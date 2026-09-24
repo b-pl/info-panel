@@ -33,7 +33,7 @@ export async function generateDashboardImage(dashboardData: DashboardData): Prom
     const calendarEvents = dashboardData.calendar;
 
     // 4. Renderowanie poszczególnych komponentów
-    renderHeader(ctx, getCurrentTime());
+    renderHeader(ctx);
     await renderWeatherWidget(ctx, weatherData, forecastData);
     await renderTransportWidget(ctx, departureData);
     await renderCalendarWidget(ctx, calendarEvents);
