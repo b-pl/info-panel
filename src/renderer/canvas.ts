@@ -12,7 +12,7 @@ import type { HourlyForecastItem, WeatherData } from '../types/api.js';
 import type {DashboardData} from '../types/dashboard.js';
 import {getCurrentTime} from './utils/time.js';
 
-export async function generateDashboardImage(dashboardData: DashboardData): Promise<string> {
+export async function generateDashboardImage(dashboardData: DashboardData): Promise<Buffer> {
     // 0. Inicjalizacja czcionek wektorowych z pełną obsługą polskich znaków (Inter)
     setupFonts();
 
@@ -45,9 +45,11 @@ export async function generateDashboardImage(dashboardData: DashboardData): Prom
 
     // 6. Zapis pliku PNG
     const buffer = await canvas.encode('png');
-    const outputPath = path.join(outputDir, 'dashboard.png');
-    await fs.writeFile(outputPath, buffer);
+    return buffer;
 
-    console.log(`Wygenerowano obraz dashboardu: ${outputPath}`);
-    return outputPath;
+    // const outputPath = path.join(outputDir, 'dashboard.png');
+    // await fs.writeFile(outputPath, buffer);
+
+    // console.log(`Wygenerowano obraz dashboardu: ${outputPath}`);
+    // return outputPath;
 }
