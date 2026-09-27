@@ -1,4 +1,4 @@
-process.loadEnvFile();
+try { process.loadEnvFile(); } catch (e) {}
 import {calendar_v3, google} from 'googleapis';
 import fs from 'fs/promises';
 

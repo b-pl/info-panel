@@ -1,4 +1,4 @@
-process.loadEnvFile();
+try { process.loadEnvFile(); } catch (e) {}
 import { google } from 'googleapis';
 import http from 'http';
 import fs from 'fs/promises';
